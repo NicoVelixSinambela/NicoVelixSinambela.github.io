@@ -62,9 +62,10 @@ body {
   
  
   .media video {
-    max-width: 100%;
-    max-height: 400px; /* Ubah tinggi maksimum sesuai kebutuhan Anda */
+    max-width: 20vw; /* Lebar video 20% dari lebar tampilan */
+    height: auto; /* Menjaga rasio aspek video */
   }
+
 
   
   .description {
