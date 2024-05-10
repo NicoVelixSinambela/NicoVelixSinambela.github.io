@@ -60,9 +60,12 @@ body {
     height: auto;
   }
   
+ 
   .media video {
     max-width: 100%;
+    max-height: 400px; /* Ubah tinggi maksimum sesuai kebutuhan Anda */
   }
+
   
   .description {
     flex: 2;
