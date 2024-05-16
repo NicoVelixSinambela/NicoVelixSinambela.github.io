@@ -1,82 +1,77 @@
-/* Tulis gaya CSS di sini */
-
-/* Gaya umum */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* Gaya khusus untuk proyek */
-  .project {
-    margin-bottom: 30px;
-  }
-  
-  .project-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .media {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .media img {
-    max-width: 100%;
-    height: auto;
-  }
-  
- 
-  .media video {
-    max-width: 20vw; /* Lebar video 20% dari lebar tampilan */
-    height: auto; /* Menjaga rasio aspek video */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  
-  .description {
-    flex: 2;
-  }
-  
-  .description h4 {
-    margin-top: 0;
-  }
-  
-  .description ul {
-    padding: 0;
-  }
-  
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Gaya khusus untuk proyek */
+.project {
+  margin-bottom: 30px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Changed from center to flex-start */
+}
+
+.media {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.media video {
+  width: 100%; /* Set width to 100% of the container */
+  max-width: 300px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without stretching */
+}
+
+.description {
+  flex: 2;
+}
+
+.description h4 {
+  margin-top: 0;
+}
+
+.description ul {
+  padding: 0;
+}
