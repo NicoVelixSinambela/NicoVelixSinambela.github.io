@@ -58,8 +58,8 @@ footer {
 }
 
 .media video {
-  width: 100%; /* Set width to 100% of the container */
-  max-width: 100px; /* Set a maximum width */
+  width: 30%; /* Set width to 100% of the container */
+  max-width: 300px; /* Set a maximum width */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the container without stretching */
 }
