@@ -11,25 +11,120 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.profile {
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-bottom: 10px;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+nav ul li {
+  margin: 0 15px;
 }
 
-.contact-info {
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fda085;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya khusus untuk proyek */
+.project {
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.media {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.media img,
+.media video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  flex: 2;
+}
+
+.description h4 {
+  margin-top: 0;
+}
+
+.description ul {
+  padding: 0;
+  list-style: none;
+}
+
+.description ul li {
+  background: #fda085;
+  color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Gaya khusus untuk tombol */
+button {
+  background-color: #fda085;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f6d365;
 }
